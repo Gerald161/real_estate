@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Search results for ...</title>
+	<title>GoldFern Limited</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="style.css">
@@ -38,7 +38,7 @@
 
   <main>
     <div class="filter_options_section">
-      <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+      <input id="pac-input" class="controls" type="text" placeholder="Search property by address or location" />
 
       <div id="map" class="filter_section">
         
@@ -47,109 +47,164 @@
     </div>
 
     <div class="filter_results_section">
-      <h3>Results for food...</h3>
+      <div style="display: flex; gap: 20px;">
+        <div class="property_option">
+          <div class="property_option_button">For Sale <i class="fa-solid fa-caret-down"></i></div>
+  
+          <div class="selected_option_dropdown" style="display: none;">
+            <div style=" display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html" style="width: 100%; cursor: pointer;">For Sale</label>
+            </div>
+            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css" style="width: 100%; cursor: pointer;">For Rent</label>
+          </div>
+            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript" style="width: 100%; cursor: pointer;">Sold</label>
+          </div>
+          </div>
+        </div>
+
+        <div class="property_option">
+          <div class="property_option_button">Price <i class="fa-solid fa-caret-down"></i></div>
+  
+          <div class="selected_option_dropdown" style="display: none;">
+            <div style=" display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html" style="width: 100%; cursor: pointer;">For Sale</label>
+            </div>
+            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css" style="width: 100%; cursor: pointer;">For Rent</label>
+          </div>
+            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript" style="width: 100%; cursor: pointer;">Sold</label>
+          </div>
+          </div>
+        </div>
+      </div>
 
       <div class="search_results">
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
             <img src="images/1.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Yummy</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">20$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
         
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/2.jpg">
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Burgers</h4>
-
+          <h3>$250,000</h3>
+          
           <div class="bottom_section">
-            <h4><span style="color: #009579;">10$</span></h4>
-            <i class="fa-solid fa-check"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/3.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>5 days ago</p>
+            </div>
           </a>
-          <h4>Noodles</h4>
+          <h3>$150,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">15$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>105 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/4.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>7 days ago</p>
+            </div>
           </a>
-          <h4>Soup</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">7$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
         
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/5.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Good stuff</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">10$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/6.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Chicken Noodles</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">12$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/7.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Chocolate Cake</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">11$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/8.jpg">
-            <i class="fa-solid fa-plus"></i>
+            <img src="images/1.jpg">
+            <div class="image_overlay_info">
+              <p>2 days ago</p>
+            </div>
           </a>
-          <h4>Pizza</h4>
+          <h3>$250,000</h3>
           
           <div class="bottom_section">
-            <h4><span style="color: #009579;">5$</span></h4>
-            <i class="fa-solid fa-plus"></i>
+            <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
+            <p>206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
       </div>
@@ -219,8 +274,28 @@
 
   <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly" defer></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly" defer></script> -->
 
-  <script type="text/javascript" src="./js/search.js"></script>
+  <!-- <script type="text/javascript" src="./js/search.js"></script> -->
+
+  <script>
+    var property_option_buttons = document.querySelectorAll(".property_option_button");
+
+    property_option_buttons.forEach((property_option_button)=>{
+      property_option_button.addEventListener("click", (e)=>{
+      if(property_option_button.nextElementSibling.style.display == "none"){
+        property_option_button.nextElementSibling.style.display = "block";
+
+        if(property_option_button.parentElement.nextElementSibling !== null){
+          property_option_button.parentElement.nextElementSibling.children[1].style.display = "none";
+        }else{
+          property_option_button.parentElement.previousElementSibling.children[1].style.display = "none";
+        }
+      }else{
+        property_option_button.nextElementSibling.style.display = "none";
+      }
+    })
+    })
+  </script>
 </body>
 </html>

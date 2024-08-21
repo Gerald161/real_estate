@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 main{
   display: flex;
   padding: 20px;

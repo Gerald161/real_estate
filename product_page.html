@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Food Name</title>
+	<title>GoldFern Limited - Read Property description</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/product_page.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,13 @@
 	<nav>
     <a href="./index.html" class="logo">
         <img src="./images/logo.png" loading="lazy" alt="">
-        <h4>Tile Palace</h4>
+        <h4>Gold Fern</h4>
     </a>
 
-    <div class="search_box">
+    <form method="get" action="search.html" class="search_box">
         <input type="text" placeholder="Search for tile">
         <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
+    </form>
     
     <div class="third_section">
         <a href="#" class="options">
@@ -33,7 +33,22 @@
             <p>Sign In</p>
         </a>
     </div>
+
+    <i style="margin-right: 20px; cursor: pointer;" class="nav_icon2 fa-solid fa-magnifying-glass"></i>
+
+    <i class="nav_icon fa fa-bars"></i>
   </nav>
+
+  <div class="mobile_screen_sidebar">
+    <i class="close_button fas fa-times"></i>
+
+    <div style="display: flex; justify-content: space-between; flex-direction: column;">
+        <a href="index.html" class="nav_link">Home</a>
+        <a href="#about" class="nav_link">Sign in</a>
+        <a href="#services" class="nav_link">Services</a>
+        <a href="contact.html" class="nav_link">Contact</a>
+    </div>
+  </div>
 
   <main>
     <div class="first_section">
@@ -58,7 +73,7 @@
       </div>
 
       <div class="extra_info">
-        <h3>Food Name</h3>
+        <h3>Apartment for sale</h3>
 
         <div class="additional_images">
           <div class="additional_image" data-left="0">
@@ -76,6 +91,12 @@
         </div>
       </div>
 
+      <h2 style="text-align: center;">$250,000</h2>
+
+      <p style="margin: 20px; text-align: center;"><span style="font-weight: bold;">2</span> bed | <span style="font-weight: bold;">2</span> bath | <span style="font-weight: bold;">1,402</span> sqft</p>
+
+      <p style="text-align: center;"><i class="fa-solid fa-location-dot"></i> 41 SE 5th St Apt 1608, Miami, FL 33131</p>
+
       <div style="display: flex; justify-content: center; align-items: center; margin: 20px;">
         <button class="order_button">Add to WishList</button>
       </div>
@@ -88,9 +109,7 @@
 
         <a href="#">About Us</a>
         <a href="#">Investor Relations</a>
-        <a href="#">Delivery Services</a>
         <a href="#">Career Opportunities</a>
-        <a href="#">Supplier Inquiries</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
     </div>
@@ -98,10 +117,10 @@
     <div class="footer_info">
         <h2>POLICIES</h2>
 
-        <a href="#">Return Policy</a>
+        <!-- <a href="#">Return Policy</a>
         <a href="#">Shipping Policy</a>
         <a href="#">Storage & Pick up Policy</a>
-        <a href="#">Damages Policy</a>
+        <a href="#">Damages Policy</a> -->
         <a href="#">Terms & Condition</a>
         <a href="#">Accessibility Statement</a>
         <a href="#">Privacy Policy</a>
@@ -113,9 +132,9 @@
         <a href="#">Contact Us</a>
         <a href="tel:+233554526844">0548448856</a>
         <a href="mailto:mrgerald@gmail.com">mrgerald@gmail.com</a>
-        <a href="#">Export Services</a>
-        <a href="#">Gift Cards</a>
-        <a href="#">Check Order Status</a>
+        <!-- <a href="#">Export Services</a> -->
+        <!-- <a href="#">Gift Cards</a> -->
+        <!-- <a href="#">Check Order Status</a> -->
     </div>
 
     <div class="footer_info">
@@ -127,12 +146,28 @@
         <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
         <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
-  </footer>
+</footer>
 
-  <p style="text-align: center; margin: 15px 0;">Copyright FoodHub &copy2023 All rights reserved</p>
+  <p style="text-align: center; margin: 15px 0;">Copyright GoldFern Limited &copy2024 All rights reserved</p>
 
   <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="./js/product_page.js"></script>
+
+  <script>
+    var sideBarButton = document.querySelector(".nav_icon");
+
+    var closeButton = document.querySelector(".close_button");
+
+    var sideBar = document.querySelector(".mobile_screen_sidebar");
+
+    sideBarButton.addEventListener("click", (e)=>{
+        sideBar.style.left = "0";
+    })
+
+    closeButton.addEventListener("click", (e)=>{
+        sideBar.style.left = "100%";
+    })
+</script>
 </body>
 </html>

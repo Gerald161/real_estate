@@ -16,13 +16,13 @@
 	<nav>
     <a href="./index.html" class="logo">
         <img src="./images/logo.png" loading="lazy" alt="">
-        <h4>Tile Palace</h4>
+        <h4>Gold Fern</h4>
     </a>
 
-    <div class="search_box" style="opacity: 0; pointer-events: none;">
+    <form method="get" action="search.html" class="search_box">
         <input type="text" placeholder="Search for tile">
         <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
+    </form>
     
     <div class="third_section">
         <a href="#" class="options">
@@ -34,7 +34,22 @@
             <p>Sign In</p>
         </a>
     </div>
+
+    <i style="margin-right: 20px; cursor: pointer;" class="nav_icon2 fa-solid fa-magnifying-glass"></i>
+
+    <i class="nav_icon fa fa-bars"></i>
   </nav>
+
+  <div class="mobile_screen_sidebar">
+    <i class="close_button fas fa-times"></i>
+
+    <div style="display: flex; justify-content: space-between; flex-direction: column;">
+        <a href="index.html" class="nav_link">Home</a>
+        <a href="#about" class="nav_link">Sign in</a>
+        <a href="#services" class="nav_link">Services</a>
+        <a href="contact.html" class="nav_link">Contact</a>
+    </div>
+  </div>
 
   <main>
     <div class="filter_options_section">
@@ -53,16 +68,16 @@
   
           <div class="selected_option_dropdown" style="display: none;">
             <div style=" display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label for="html" style="width: 100%; cursor: pointer;">For Sale</label>
+              <input type="radio" checked id="sale" name="type_of_property" value="sale">
+              <label for="sale" style="width: 100%; cursor: pointer;">For Sale</label>
             </div>
             <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="css" name="fav_language" value="CSS">
-              <label for="css" style="width: 100%; cursor: pointer;">For Rent</label>
+              <input type="radio" id="rent" name="type_of_property" value="CSS">
+              <label for="rent" style="width: 100%; cursor: pointer;">For Rent</label>
           </div>
             <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-              <label for="javascript" style="width: 100%; cursor: pointer;">Sold</label>
+              <input type="radio" id="sold" name="type_of_property" value="JavaScript">
+              <label for="sold" style="width: 100%; cursor: pointer;">Sold</label>
           </div>
           </div>
         </div>
@@ -70,19 +85,37 @@
         <div class="property_option">
           <div class="property_option_button">Price <i class="fa-solid fa-caret-down"></i></div>
   
-          <div class="selected_option_dropdown" style="display: none;">
-            <div style=" display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label for="html" style="width: 100%; cursor: pointer;">For Sale</label>
+          <div class="selected_option_dropdown" style="display: none; width: 240px;">
+            <p style="margin: 10px;">Price Range</p>
+
+            <div style="display: flex; justify-content: space-between">
+              <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px;">
+                <p>Minimum</p>
+  
+                <select style="font-size: 0.9em;" name="pets" id="pet-select">
+                  <option value="500">$500</option>
+                  <option value="1000">$1000</option>
+                  <option value="1500">$1500</option>
+                  <option value="10000">$10000</option>
+                  <option value="50000">$50000</option>
+                  <option value="10000">$10000</option>
+                </select>
+              </div>
+  
+              <div style="display: flex; flex-direction: column; gap: 5px; margin: 10px;">
+                <p>Maximum</p>
+  
+                <select style="font-size: 0.9em;" name="maximum" id="pet-select">
+                  <option value="500">$500</option>
+                  <option value="1000">$1000</option>
+                  <option value="1500">$1500</option>
+                  <option value="10000">$10000</option>
+                  <option value="50000">$50000</option>
+                  <option value="10000">$10000</option>
+                </select>
+              </div>
             </div>
-            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="css" name="fav_language" value="CSS">
-              <label for="css" style="width: 100%; cursor: pointer;">For Rent</label>
-          </div>
-            <div style="display: flex; gap: 3px; justify-items: center; align-items: center;">
-              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-              <label for="javascript" style="width: 100%; cursor: pointer;">Sold</label>
-          </div>
+
           </div>
         </div>
       </div>
@@ -90,7 +123,8 @@
       <div class="search_results">
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>2 days ago</p>
             </div>
@@ -99,13 +133,14 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
         
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>2 days ago</p>
             </div>
@@ -114,13 +149,14 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>5 days ago</p>
             </div>
@@ -129,13 +165,14 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>105 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 105 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>7 days ago</p>
             </div>
@@ -144,13 +181,14 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
         
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>2 days ago</p>
             </div>
@@ -159,13 +197,14 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
               <p>2 days ago</p>
             </div>
@@ -174,37 +213,39 @@
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
-              <p>2 days ago</p>
+              <p>4 days ago</p>
             </div>
           </a>
           <h3>$250,000</h3>
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
 
         <div class="search_result">
           <a href="product_page.html" class="search_result_image_container">
-            <img src="images/1.jpg">
+            <img src="images/1.jpg" loading="lazy">
+            <img src="./images/lobby1.jpg" loading="lazy" alt="">
             <div class="image_overlay_info">
-              <p>2 days ago</p>
+              <p>10 days ago</p>
             </div>
           </a>
           <h3>$250,000</h3>
           
           <div class="bottom_section">
             <p><span style="font-weight: bold;">3</span> bds | <span style="font-weight: bold;">2</span>ba | <span style="font-weight: bold;">912</span> sqft - House for Sale</p>
-            <p>206 Watson Rd, North Syracuse, NY 13212</p>
+            <p><i class="fa-solid fa-location-dot"></i> 206 Watson Rd, North Syracuse, NY 13212</p>
           </div>
         </div>
       </div>
@@ -224,53 +265,43 @@
   </main>
 
   <footer>
-      <div class="footer_info">
-          <h2>COMPANY INFO</h2>
+    <div class="footer_info">
+        <h2>COMPANY INFO</h2>
 
-          <a href="#">About Us</a>
-          <a href="#">Investor Relations</a>
-          <a href="#">Delivery Services</a>
-          <a href="#">Career Opportunities</a>
-          <a href="#">Supplier Inquiries</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-      </div>
+        <a href="#">About Us</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Career Opportunities</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+    </div>
 
-      <div class="footer_info">
-          <h2>POLICIES</h2>
+    <div class="footer_info">
+        <h2>POLICIES</h2>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Privacy Policy</a>
+    </div>
 
-          <a href="#">Return Policy</a>
-          <a href="#">Shipping Policy</a>
-          <a href="#">Storage & Pick up Policy</a>
-          <a href="#">Damages Policy</a>
-          <a href="#">Terms & Condition</a>
-          <a href="#">Accessibility Statement</a>
-          <a href="#">Privacy Policy</a>
-      </div>
+    <div class="footer_info">
+        <h2>CUSTOMER CARE</h2>
 
-      <div class="footer_info">
-          <h2>CUSTOMER CARE</h2>
+        <a href="#">Contact Us</a>
+        <a href="tel:+233554526844">0548448856</a>
+        <a href="mailto:mrgerald@gmail.com">mrgerald@gmail.com</a>
+    </div>
 
-          <a href="#">Contact Us</a>
-          <a href="tel:+233554526844">0548448856</a>
-          <a href="mailto:mrgerald@gmail.com">mrgerald@gmail.com</a>
-          <a href="#">Export Services</a>
-          <a href="#">Gift Cards</a>
-          <a href="#">Check Order Status</a>
-      </div>
+    <div class="footer_info">
+        <h2>Social Media</h2>
 
-      <div class="footer_info">
-          <h2>Social Media</h2>
+        <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+</footer>
 
-          <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-  </footer>
-
-  <p style="text-align: center; padding: 20px 15px 15px 15px; margin-bottom: 0; color: rgb(61, 57, 53);">&copy2024 Tiles Palace All Rights Reserved</p>
+<p style="text-align: center; padding: 20px 15px 15px 15px; margin-bottom: 0; color: rgb(61, 57, 53);">&copy2024 GoldFern Limited All Rights Reserved</p>
 
   <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
 
@@ -295,6 +326,20 @@
         property_option_button.nextElementSibling.style.display = "none";
       }
     })
+    })
+
+    var sideBarButton = document.querySelector(".nav_icon");
+
+    var closeButton = document.querySelector(".close_button");
+
+    var sideBar = document.querySelector(".mobile_screen_sidebar");
+
+    sideBarButton.addEventListener("click", (e)=>{
+        sideBar.style.left = "0";
+    })
+
+    closeButton.addEventListener("click", (e)=>{
+        sideBar.style.left = "100%";
     })
   </script>
 </body>

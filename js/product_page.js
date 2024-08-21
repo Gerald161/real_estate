@@ -143,25 +143,3 @@ function changeLeftToSeventy(){
 
     final = -fresh_counter;
 };
-
-var amount = document.querySelector("#amount");
-
-var total_price = document.querySelector(".total_price");
-
-var initial_price = parseInt(total_price.innerHTML);
-
-amount.addEventListener("change", (e)=>{
-    const multiplier = parseInt(e.target.value);
-
-    total_price.innerHTML = multiplier * initial_price;
-})
-
-amount.addEventListener("keyup", (e)=>{
-    const multiplier = parseInt(e.target.value);
-
-    if(e.target.value == ""){
-        e.target.value = `1`;
-    }else{
-        total_price.innerHTML = multiplier * initial_price;
-    }
-})

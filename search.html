@@ -6,6 +6,7 @@
 	<title>Search results for ...</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="shortcut icon" type="image/png" href="./images/logo.png">
@@ -37,18 +38,9 @@
 
   <main>
     <div class="filter_options_section">
-      <form method="post">
-        <div class="search_block">
-          <input type="text" placeholder="Search..." id="search_box" name="">
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
 
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="search_suggestions">
-          
-        </div>
-      </form>
-
-      <div class="filter_section">
+      <div id="map" class="filter_section">
         
       </div>
 
@@ -227,8 +219,8 @@
 
   <script src="https://kit.fontawesome.com/2843b9be73.js" crossorigin="anonymous"></script>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4yLbzi2EXsv7V92pDWS6bnbqOSdNa978"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly" defer></script>
 
-  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="./js/search.js"></script>
 </body>
 </html>

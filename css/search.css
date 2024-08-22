@@ -193,4 +193,8 @@ main .filter_results_section .pagination_container a:hover{
   main .filter_results_section h3{
     text-align: center;
   }
+
+  main .filter_results_section .pagination_container{
+    gap: 5px;
+  }
 }

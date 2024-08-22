@@ -509,7 +509,15 @@ footer .footer_info a i{
     .featured_styles .featured_style .overlay h1{
         font-size: 1.2em;
         font-weight: bold;
+        text-align: center;
     } 
+
+    .featured_styles_second .big_feature .overlay{
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        justify-content: center;
+    }
 
     .featured_styles_second .big_feature{
         grid-column: span 1;

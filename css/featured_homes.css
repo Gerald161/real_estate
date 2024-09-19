@@ -5,6 +5,7 @@
     grid-auto-rows: 320px;
     grid-auto-flow: dense;
     grid-row-gap: 20px;
+    padding: 40px 20px;
   }
   
   .search_results .search_result{

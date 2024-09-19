@@ -166,3 +166,9 @@ main .first_section .extra_info .additional_images .additional_image:hover{
     grid-auto-rows: 120px;
   }
 }
+
+@media (prefers-color-scheme: dark){
+  h2, h3, p{
+    color: white;
+  }
+}

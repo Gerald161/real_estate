@@ -41,6 +41,10 @@ nav .logo img{
     object-fit: cover;
 }
 
+nav .logo img:nth-child(2){ 
+    display: none;
+}
+
 nav .search_box{
     flex: 4;
     display: flex;
@@ -165,6 +169,7 @@ nav .third_section .options{
     font-style: normal;
     font-weight: 300;
     font-size: 30px;   
+    text-align: center;
 }
 
 .short_desc p{
@@ -292,7 +297,8 @@ footer{
     justify-content: space-around;
     padding: 20px;
     flex-wrap: wrap;
-    border-bottom: solid #ccc 1px;
+    border-bottom: solid black 1px;
+    background-color: #e0e0e0; 
 }
 
 footer .footer_info{
@@ -453,6 +459,13 @@ footer .footer_info a i{
     width: 100%;
 }
 
+.copyright{
+    text-align: center; 
+    padding: 20px 15px 15px 15px; 
+    margin-bottom: 0; 
+    color: rgb(61, 57, 53);
+}
+
 @media(max-width: 700px){
 .featured_meals{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -542,4 +555,82 @@ footer .footer_info a i{
         font-weight: 300;
         font-size: 16px;
     }
-  }
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: #121212;
+        line-height: 1.6;
+    }
+
+    nav{
+        border-bottom-color: #ccc;
+    }
+
+    nav .logo{
+        color: white;
+    }
+
+    nav .logo img:nth-child(1){ 
+        display: none !important;
+    }
+
+    nav .logo img:nth-child(2){ 
+        display: block !important;
+    }
+
+    nav .search_box i{
+        color: white;
+    }
+
+    nav .search_box input{
+        background-color: #0f0f0f;
+        border: solid 1px #ccc;
+        color: white;
+    }
+
+    .nav_icon, .nav_icon2{
+        color: white;
+    }
+
+    .mobile_screen_sidebar{
+        background-color: #121212;
+    }
+
+    .close_button{
+        color: white;
+    }
+
+    .services_list_left a, .services_list_right a{
+        color: white;
+    }
+
+    a{
+        color: white;
+    }
+
+    .short_desc h2{
+        color: white;
+    }
+
+    .short_desc p{
+        color: rgb(170, 170, 170);
+    }
+
+    .search_results .search_result h3, .search_results .search_result .bottom_section{
+        color: white;
+    }
+
+    .copyright{
+        color: white;
+    }
+
+    footer{
+        background-color: #1f1f1f;
+        border-bottom: solid #ccc 1px;
+    }
+
+    footer .footer_info h2{
+        color: white;
+    }
+}

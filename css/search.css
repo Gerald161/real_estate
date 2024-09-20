@@ -75,6 +75,10 @@ main .filter_results_section .property_option .selected_option_dropdown{
   flex-direction: column;
 }
 
+main .filter_results_section .property_option .selected_option_dropdown select{
+  padding: 5px;
+}
+
 input[type="radio"]{
 	width: 20px;
 	height: 20px;
@@ -151,6 +155,11 @@ main .filter_results_section .search_results .search_result h3{
   padding: 3px 0;
 }
 
+main .filter_results_section .page_numbering_section{
+  text-align: center; 
+  margin: 20px;
+}
+
 main .filter_results_section .pagination_container{
   display: flex;
   justify-content: center;
@@ -196,5 +205,42 @@ main .filter_results_section .pagination_container a:hover{
 
   main .filter_results_section .pagination_container{
     gap: 5px;
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  main .filter_results_section .page_numbering_section{
+    color: white;
+  }
+
+  main .filter_results_section .pagination_container a{
+    color: white;
+  }
+
+  main .filter_results_section .pagination_container a:hover{
+    color: black;
+  }
+
+  main .filter_results_section .property_option .property_option_button{
+    border: solid 1px #ccc;
+    color: white;
+  }
+
+  main .filter_results_section .property_option .property_option_button:hover{
+    background-color: white; 
+    color: black;
+  }
+
+  main .filter_results_section .property_option .selected_option_dropdown{
+    background-color: #333; 
+    border-color: #333;
+  }
+
+  main .filter_results_section .property_option .selected_option_dropdown label{
+    color: white;
+  }
+
+  main .filter_results_section .property_option .selected_option_dropdown p{
+    color: white;
   }
 }
